@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.4.3",
+    "sequence-diagram": "^0.0.4",
     "vue": "^2.6.10"
   },
   "devDependencies": {
