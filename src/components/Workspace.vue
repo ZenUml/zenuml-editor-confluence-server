@@ -1,14 +1,25 @@
 <template>
-  <sequence-diagram>{{dsl}}</sequence-diagram>
+  <Splitpanes vertical>
+    <Pane>This the editor part</Pane>
+    <Pane>
+      <sequence-diagram>{{dsl}}</sequence-diagram>
+    </Pane>
+  </Splitpanes>
 </template>
 
 <script>
+  import { Splitpanes, Pane } from 'splitpanes'
+  import 'splitpanes/dist/splitpanes.css'
+
   export default {
   name: 'Workspace',
   data: function() {
     return {
       dsl: 'A.method()'
     }
+  },
+  components: {
+    Splitpanes, Pane
   }
 }
 </script>
