@@ -32,9 +32,6 @@
 </template>
 
 <script>
-  import Vue from 'vue'
-  window.Vue = Vue
-
   export default {
   name: 'HelloWorld',
   props: {
