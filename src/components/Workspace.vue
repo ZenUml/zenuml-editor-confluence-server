@@ -1,6 +1,11 @@
+<!--TODO:
+# Customise splitter
+# Add vuex store and expose it on dialog as {store} to manipulate dsl
+# Integrate with code-mirror
+ -->
 <template>
-  <Splitpanes vertical>
-    <Pane>This the editor part</Pane>
+  <Splitpanes vertical class="default-theme">
+    <Pane><editor /></Pane>
     <Pane>
       <sequence-diagram>{{dsl}}</sequence-diagram>
     </Pane>
@@ -10,6 +15,7 @@
 <script>
   import { Splitpanes, Pane } from 'splitpanes'
   import 'splitpanes/dist/splitpanes.css'
+  import Editor from "./Editor";
 
   export default {
   name: 'Workspace',
@@ -19,7 +25,9 @@
     }
   },
   components: {
-    Splitpanes, Pane
+    Editor,
+    Splitpanes,
+    Pane
   }
 }
 </script>
