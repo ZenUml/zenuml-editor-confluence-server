@@ -5,7 +5,7 @@ import Vuex from 'vuex'
 import { Store } from 'vue-sequence'
 import 'vue-sequence/dist/vue-sequence.css'
 
-import App from './App.vue'
+import Workspace from './components/Workspace'
 
 Vue.use(Vuex)
 Vue.use(VueCodeMirror)
@@ -13,7 +13,8 @@ Vue.use(VueCodeMirror)
 Vue.config.productionTip = false
 const store = new Vuex.Store(Store);
 
-new Vue({
+window.VueModel = new Vue({
   store,
-  render: h => h(App),
-}).$mount('#app')
+  render: h => h(Workspace),
+})
+
