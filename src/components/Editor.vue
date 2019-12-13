@@ -2,8 +2,8 @@
   <div class="editor">
     <div class="toolbox">
       <svg v-on:click="addParticipant()"
-         width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-         <title>New participant</title>
+           width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>New participant</title>
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Participant-Copy" stroke="#202020">
             <rect id="Rectangle" x="8.5" y="4.5" width="34" height="10" rx="3"></rect>
@@ -48,7 +48,7 @@
       </svg>
 
       <svg v-on:click="appendCode('A.message {\n}')"
-        width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+           width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Sync message</title>
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Execution-Copy" stroke="#202020">
@@ -61,7 +61,7 @@
         </g>
       </svg>
       <svg v-on:click="appendCode('result = A.message {\n}')"
-         width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+           width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Return value</title>
         <g id="Execution-Copy-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <path d="M40.5,5 L40.5,47" id="Line" stroke="#202020" stroke-linecap="square" stroke-dasharray="5"></path>
@@ -80,7 +80,7 @@
         </g>
       </svg>
       <svg v-on:click="appendCode('A.message() {\n  selfMessage()\n}')"
-       width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+           width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Self message</title>
         <g id="Execution-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <path d="M20.5,4 L20.5,46" id="Line" stroke="#202020" stroke-linecap="square" stroke-dasharray="5"></path>
@@ -97,7 +97,7 @@
       </svg>
 
       <svg v-on:click="appendCode('a = new A()')"
-        width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+           width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>New instance</title>
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Creation-Copy">
@@ -114,7 +114,7 @@
       </svg>
 
       <svg v-on:click="appendCode('if(condition) {\n  A.method()\n}\n')"
-         width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+           width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Conditional</title>
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Alt-Copy">
@@ -130,7 +130,7 @@
       </svg>
 
       <svg v-on:click="appendCode('while(condition) {\n  A.method()\n}\n')"
-         width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+           width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Loop</title>
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Loop-Copy">
@@ -146,7 +146,7 @@
       </svg>
 
       <svg v-on:click="appendCode('//Note\nA.message()')"
-         width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+           width="20px" height="20px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <title>Note</title>
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Note-Copy">
@@ -175,10 +175,10 @@
     </div>
     <div class="body">
       <codemirror class="dsl-editor"
-        ref="myCm"
-        :code="code"
-        :options="cmOptions"
-        @input="onEditorCodeChange">
+                  ref="myCm"
+                  :code="code"
+                  :options="cmOptions"
+                  @input="onEditorCodeChange">
       </codemirror>
     </div>
   </div>
@@ -198,7 +198,6 @@
     data() {
       return {
         helpUrl: 'https://zenuml.atlassian.net/wiki/spaces/Doc/overview',
-        code: 'C.method',
         cmOptions: {
           tabSize: 4,
           mode: 'text/javascript',
@@ -244,6 +243,9 @@
     computed: {
       editor() {
         return this.$refs.myEditor.Editor
+      },
+      code() {
+        return this.$store.state.code
       },
       codemirror() {
         return this.$refs.myCm.codemirror

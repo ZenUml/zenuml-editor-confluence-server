@@ -7,12 +7,14 @@
   <Splitpanes vertical class="default-theme">
     <Pane><editor /></Pane>
     <Pane>
-      <sequence-diagram>{{dsl}}</sequence-diagram>
+      <SeqDiagram />
     </Pane>
   </Splitpanes>
 </template>
 
 <script>
+  import { SeqDiagram } from 'vue-sequence'
+
   import { Splitpanes, Pane } from 'splitpanes'
   import 'splitpanes/dist/splitpanes.css'
   import Editor from "./Editor";
@@ -27,7 +29,8 @@
   components: {
     Editor,
     Splitpanes,
-    Pane
+    Pane,
+    SeqDiagram
   }
 }
 </script>
