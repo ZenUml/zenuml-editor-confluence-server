@@ -1,8 +1,3 @@
-<!--TODO:
-# Customise splitter
-# Add vuex store and expose it on dialog as {store} to manipulate dsl
-# Integrate with code-mirror
- -->
 <template>
   <Splitpanes vertical class="default-theme">
     <Pane><editor /></Pane>
